@@ -5,6 +5,7 @@ package capitulo_01_intermedio.ejercicio2
 fun main() {
     val miInt: Int = 32
     //Usamos el operador "as" para hacer un cast de int a double. -> ClassCastException
-    val miDouble: Double = miInt as Double
+    val miDouble: Double = miInt.toDouble()
+    println(miDouble)
 }
 

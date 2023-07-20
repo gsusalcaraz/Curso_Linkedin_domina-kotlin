@@ -4,10 +4,12 @@ package capitulo_01_intermedio.ejercicio7
 
 
 fun main() {
-
+    calculoSueldoMensual("Pepe", 12, 40000)
+    calculoSueldoMensual(nPagas = 12, sueldoAnualTotal = 40_000)
 }
 
-fun calculoSueldoMensual(nombreEmpleado: String, nPagas: Int = 12, sueldoAnualTotal: Int) {
+fun calculoSueldoMensual(nombreEmpleado: String? = "Anónimo", nPagas: Int = 12, sueldoAnualTotal: Int) {
     //calculo del sueldo mensual
-    println("El sueldo mensual de $nombreEmpleado es: X")
+    val sueldoMensual = sueldoAnualTotal / nPagas
+    println("El sueldo mensual de $nombreEmpleado es: $sueldoMensual")
 }
